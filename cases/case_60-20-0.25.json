@@ -1,0 +1,6521 @@
+{
+  "case_id": "60-20-0.25",
+  "source_note": "Public data file combining a static scheduling instance and dynamic scene descriptors for this experimental case.",
+  "static_instance": {
+    "instance_parameters": {
+      "sub_assembly_count": 60,
+      "rescheduling_interval": 20,
+      "disturbance_probability": 0.25,
+      "worker_types": [
+        "assembly workers",
+        "welding workers",
+        "grinding workers"
+      ],
+      "worker_quantities": [
+        12,
+        12,
+        12
+      ],
+      "shape_ratio_rectangle_triangle_trapezoid_parallelogram": [
+        0.5,
+        0.1,
+        0.2,
+        0.2
+      ],
+      "construction_site": {
+        "width": 25,
+        "height": 15
+      }
+    },
+    "sub_assemblies": [
+      {
+        "sub_assembly_id": 1,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 24,
+          "2": 25,
+          "3": 29,
+          "4": 14
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 324,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 2,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 14,
+          "2": 15,
+          "3": 25,
+          "4": 14,
+          "5": 10,
+          "6": 19
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 232,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 3,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 31,
+          "3": 10,
+          "4": 20,
+          "5": 18
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 793,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            2,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            2,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 4,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 25,
+          "3": 31,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 545,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 5,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 49,
+          "3": 14
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 206,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 6,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 24,
+          "2": 22,
+          "3": 31,
+          "4": 16
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 455,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 7,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 14,
+          "2": 14,
+          "3": 26,
+          "4": 12,
+          "5": 10,
+          "6": 13
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 362,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            1,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 8,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 49,
+          "3": 14
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 208,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 9,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 24,
+          "3": 32,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 349,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 10,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 53,
+          "3": 12
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 363,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 11,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 12,
+          "2": 12,
+          "3": 33,
+          "4": 9,
+          "5": 9,
+          "6": 19
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 213,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 12,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 46,
+          "3": 20
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 682,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 13,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 15,
+          "2": 38,
+          "3": 8,
+          "4": 20,
+          "5": 15
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 181,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            2,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            2,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 14,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 9,
+          "2": 16,
+          "3": 33,
+          "4": 10,
+          "5": 8,
+          "6": 20
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 271,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            1,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 15,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 26,
+          "3": 24,
+          "4": 18
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 302,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 16,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 53,
+          "3": 19
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 245,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            1,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 17,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 10,
+          "2": 17,
+          "3": 27,
+          "4": 10,
+          "5": 8,
+          "6": 15
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 474,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 18,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 12,
+          "2": 15,
+          "3": 24,
+          "4": 10,
+          "5": 11,
+          "6": 20
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 204,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 19,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 16,
+          "2": 11,
+          "3": 29,
+          "4": 6,
+          "5": 13,
+          "6": 15
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 457,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 20,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 19,
+          "2": 22,
+          "3": 27,
+          "4": 21
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 297,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 21,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 22,
+          "2": 23,
+          "3": 23,
+          "4": 18
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 294,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 22,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 18,
+          "3": 33,
+          "4": 10
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 300,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 23,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 24,
+          "2": 62,
+          "3": 13
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 865,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 24,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 10,
+          "2": 40,
+          "3": 8,
+          "4": 20,
+          "5": 17
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 216,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            1,
+            0
+          ],
+          "3": [
+            1,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            2,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 25,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 13,
+          "2": 36,
+          "3": 9,
+          "4": 27,
+          "5": 13
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 194,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            2,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 26,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 9,
+          "2": 9,
+          "3": 34,
+          "4": 8,
+          "5": 8,
+          "6": 13
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 186,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            1,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 27,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 26,
+          "2": 25,
+          "3": 31,
+          "4": 13
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 546,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 28,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 9,
+          "2": 14,
+          "3": 29,
+          "4": 9,
+          "5": 6,
+          "6": 18
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 208,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 29,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 22,
+          "2": 29,
+          "3": 30,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 528,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 30,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 17,
+          "3": 38,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 190,
+        "space_resource": {
+          "shape_type": "rectangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 31,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 25,
+          "2": 52,
+          "3": 21
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 362,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 32,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 27,
+          "2": 15,
+          "3": 28,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 519,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 33,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 10,
+          "2": 12,
+          "3": 29,
+          "4": 9,
+          "5": 9,
+          "6": 19
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 527,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 34,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 13,
+          "2": 11,
+          "3": 34,
+          "4": 8,
+          "5": 7,
+          "6": 15
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 448,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            1,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 35,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 14,
+          "2": 14,
+          "3": 37,
+          "4": 11,
+          "5": 11,
+          "6": 13
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 229,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 36,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 19,
+          "2": 65,
+          "3": 15
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 284,
+        "space_resource": {
+          "shape_type": "Triangle",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 37,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 23,
+          "2": 30,
+          "3": 24,
+          "4": 16
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 297,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 38,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 9,
+          "2": 9,
+          "3": 30,
+          "4": 9,
+          "5": 8,
+          "6": 17
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 244,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 39,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 23,
+          "2": 17,
+          "3": 29,
+          "4": 16
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 196,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 40,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 26,
+          "2": 55,
+          "3": 15
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 542,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            1,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 41,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 27,
+          "2": 52,
+          "3": 16
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 439,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 42,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 12,
+          "2": 26,
+          "3": 8,
+          "4": 25,
+          "5": 18
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 270,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            2,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 43,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 13,
+          "2": 10,
+          "3": 33,
+          "4": 7,
+          "5": 7,
+          "6": 11
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 1172,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 44,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 18,
+          "2": 52,
+          "3": 17
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 208,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 45,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 16,
+          "2": 25,
+          "3": 31,
+          "4": 20
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 306,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 46,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 47,
+          "3": 13
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 223,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            1,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 47,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 21,
+          "2": 19,
+          "3": 30,
+          "4": 12
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 529,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 48,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 24,
+          "2": 21,
+          "3": 30,
+          "4": 14
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 260,
+        "space_resource": {
+          "shape_type": "Trapezoidal",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 49,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 11,
+          "2": 14,
+          "3": 24,
+          "4": 10,
+          "5": 10,
+          "6": 14
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 440,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 50,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 12,
+          "2": 30,
+          "3": 8,
+          "4": 19,
+          "5": 19
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 338,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            1,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 51,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 10,
+          "2": 10,
+          "3": 39,
+          "4": 6,
+          "5": 10,
+          "6": 15
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 262,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 52,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 15,
+          "2": 55,
+          "3": 13
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 236,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 53,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 13,
+          "2": 10,
+          "3": 31,
+          "4": 9,
+          "5": 8,
+          "6": 14
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 211,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            1,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            1,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 54,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 22,
+          "2": 49,
+          "3": 18
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 344,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 55,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 27,
+          "2": 18,
+          "3": 29,
+          "4": 12
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 201,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 56,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 26,
+          "3": 22,
+          "4": 15
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 357,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            1,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            1,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 57,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "processing_times": {
+          "1": 13,
+          "2": 14,
+          "3": 23,
+          "4": 10,
+          "5": 9,
+          "6": 13
+        },
+        "predecessors": {
+          "6": [
+            5
+          ],
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ],
+          "5": [
+            6
+          ]
+        },
+        "release_time": 0,
+        "due_date": 214,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            1,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            2,
+            0,
+            0
+          ],
+          "5": [
+            0,
+            2,
+            0
+          ],
+          "6": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 58,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "processing_times": {
+          "1": 9,
+          "2": 30,
+          "3": 7,
+          "4": 26,
+          "5": 15
+        },
+        "predecessors": {
+          "5": [
+            4
+          ],
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ],
+          "4": [
+            5
+          ]
+        },
+        "release_time": 0,
+        "due_date": 372,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            2,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            2,
+            0,
+            0
+          ],
+          "4": [
+            0,
+            1,
+            0
+          ],
+          "5": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 59,
+        "operation_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "processing_times": {
+          "1": 20,
+          "2": 25,
+          "3": 24,
+          "4": 13
+        },
+        "predecessors": {
+          "4": [
+            3
+          ],
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ],
+          "3": [
+            4
+          ]
+        },
+        "release_time": 0,
+        "due_date": 607,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            0,
+            2,
+            0
+          ],
+          "2": [
+            2,
+            0,
+            0
+          ],
+          "3": [
+            0,
+            2,
+            0
+          ],
+          "4": [
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "sub_assembly_id": 60,
+        "operation_ids": [
+          1,
+          2,
+          3
+        ],
+        "processing_times": {
+          "1": 19,
+          "2": 47,
+          "3": 14
+        },
+        "predecessors": {
+          "3": [
+            2
+          ],
+          "2": [
+            1
+          ],
+          "1": []
+        },
+        "successors": {
+          "1": [
+            2
+          ],
+          "2": [
+            3
+          ]
+        },
+        "release_time": 0,
+        "due_date": 267,
+        "space_resource": {
+          "shape_type": "Parallelogram",
+          "vertices": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "worker_requirements_of_operation": {
+          "1": [
+            1,
+            0,
+            0
+          ],
+          "2": [
+            0,
+            2,
+            0
+          ],
+          "3": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "dynamic_scenario_data": {
+    "dynamic_scene_count": 31,
+    "objective_position_order": [
+      "mean_delay_time",
+      "average_worker_resource_utilization_ratio",
+      "space_resource_utilization_ratio",
+      "mean_finish_time_variation",
+      "makespan"
+    ],
+    "worker_type_order": [
+      "assembly workers",
+      "welding workers",
+      "grinding workers"
+    ],
+    "dynamic_scenes": [
+      {
+        "scene_id": 0,
+        "is_initial_scene": true,
+        "rescheduling_time": 0,
+        "previous_rescheduling_time": null,
+        "actual_interval": null,
+        "remaining_operation_count": 268,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": null
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 1,
+        "is_initial_scene": false,
+        "rescheduling_time": 20,
+        "previous_rescheduling_time": 0,
+        "actual_interval": 20,
+        "remaining_operation_count": 243,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -22
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 2,
+                "delta": 102
+              },
+              {
+                "sub_assembly_id": 31,
+                "delta": -176
+              },
+              {
+                "sub_assembly_id": 52,
+                "delta": 8
+              },
+              {
+                "sub_assembly_id": 54,
+                "delta": -135
+              },
+              {
+                "sub_assembly_id": 57,
+                "delta": 167
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 2,
+        "is_initial_scene": false,
+        "rescheduling_time": 40,
+        "previous_rescheduling_time": 20,
+        "actual_interval": 20,
+        "remaining_operation_count": 230,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -25
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 3,
+        "is_initial_scene": false,
+        "rescheduling_time": 60,
+        "previous_rescheduling_time": 40,
+        "actual_interval": 20,
+        "remaining_operation_count": 227,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "assembly workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 4,
+        "is_initial_scene": false,
+        "rescheduling_time": 80,
+        "previous_rescheduling_time": 60,
+        "actual_interval": 20,
+        "remaining_operation_count": 220,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 5,
+        "is_initial_scene": false,
+        "rescheduling_time": 100,
+        "previous_rescheduling_time": 80,
+        "actual_interval": 20,
+        "remaining_operation_count": 211,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -13
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 6,
+        "is_initial_scene": false,
+        "rescheduling_time": 120,
+        "previous_rescheduling_time": 100,
+        "actual_interval": 20,
+        "remaining_operation_count": 204,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -24
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 7,
+        "is_initial_scene": false,
+        "rescheduling_time": 140,
+        "previous_rescheduling_time": 120,
+        "actual_interval": 20,
+        "remaining_operation_count": 188,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -3
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 8,
+        "is_initial_scene": false,
+        "rescheduling_time": 160,
+        "previous_rescheduling_time": 140,
+        "actual_interval": 20,
+        "remaining_operation_count": 176,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 8,
+                "delta": 154
+              },
+              {
+                "sub_assembly_id": 13,
+                "delta": 517
+              },
+              {
+                "sub_assembly_id": 20,
+                "delta": 202
+              },
+              {
+                "sub_assembly_id": 26,
+                "delta": 10
+              },
+              {
+                "sub_assembly_id": 31,
+                "delta": -163
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 9,
+        "is_initial_scene": false,
+        "rescheduling_time": 180,
+        "previous_rescheduling_time": 160,
+        "actual_interval": 20,
+        "remaining_operation_count": 164,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 10,
+        "is_initial_scene": false,
+        "rescheduling_time": 200,
+        "previous_rescheduling_time": 180,
+        "actual_interval": 20,
+        "remaining_operation_count": 159,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 11,
+        "is_initial_scene": false,
+        "rescheduling_time": 220,
+        "previous_rescheduling_time": 200,
+        "actual_interval": 20,
+        "remaining_operation_count": 153,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 20,
+                "delta": 160
+              },
+              {
+                "sub_assembly_id": 34,
+                "delta": 64
+              },
+              {
+                "sub_assembly_id": 45,
+                "delta": -101
+              },
+              {
+                "sub_assembly_id": 46,
+                "delta": 77
+              },
+              {
+                "sub_assembly_id": 54,
+                "delta": -124
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 12,
+        "is_initial_scene": false,
+        "rescheduling_time": 240,
+        "previous_rescheduling_time": 220,
+        "actual_interval": 20,
+        "remaining_operation_count": 149,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "assembly workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 13,
+        "is_initial_scene": false,
+        "rescheduling_time": 260,
+        "previous_rescheduling_time": 240,
+        "actual_interval": 20,
+        "remaining_operation_count": 147,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -19
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 14,
+        "is_initial_scene": false,
+        "rescheduling_time": 280,
+        "previous_rescheduling_time": 260,
+        "actual_interval": 20,
+        "remaining_operation_count": 136,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -3
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 15,
+        "is_initial_scene": false,
+        "rescheduling_time": 300,
+        "previous_rescheduling_time": 280,
+        "actual_interval": 20,
+        "remaining_operation_count": 135,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -26
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 16,
+        "is_initial_scene": false,
+        "rescheduling_time": 320,
+        "previous_rescheduling_time": 300,
+        "actual_interval": 20,
+        "remaining_operation_count": 130,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 17,
+        "is_initial_scene": false,
+        "rescheduling_time": 340,
+        "previous_rescheduling_time": 320,
+        "actual_interval": 20,
+        "remaining_operation_count": 128,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 6,
+                "delta": -260
+              },
+              {
+                "sub_assembly_id": 21,
+                "delta": 3
+              },
+              {
+                "sub_assembly_id": 35,
+                "delta": 248
+              },
+              {
+                "sub_assembly_id": 45,
+                "delta": -96
+              },
+              {
+                "sub_assembly_id": 54,
+                "delta": -136
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 18,
+        "is_initial_scene": false,
+        "rescheduling_time": 360,
+        "previous_rescheduling_time": 340,
+        "actual_interval": 20,
+        "remaining_operation_count": 118,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -14
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 19,
+        "is_initial_scene": false,
+        "rescheduling_time": 380,
+        "previous_rescheduling_time": 360,
+        "actual_interval": 20,
+        "remaining_operation_count": 110,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 20,
+        "is_initial_scene": false,
+        "rescheduling_time": 400,
+        "previous_rescheduling_time": 380,
+        "actual_interval": 20,
+        "remaining_operation_count": 100,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "assembly workers",
+                "delta": -3
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 21,
+        "is_initial_scene": false,
+        "rescheduling_time": 420,
+        "previous_rescheduling_time": 400,
+        "actual_interval": 20,
+        "remaining_operation_count": 97,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -3
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 26,
+                "delta": 18
+              },
+              {
+                "sub_assembly_id": 51,
+                "delta": 75
+              },
+              {
+                "sub_assembly_id": 54,
+                "delta": -151
+              },
+              {
+                "sub_assembly_id": 56,
+                "delta": -145
+              },
+              {
+                "sub_assembly_id": 57,
+                "delta": 145
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 22,
+        "is_initial_scene": false,
+        "rescheduling_time": 440,
+        "previous_rescheduling_time": 420,
+        "actual_interval": 20,
+        "remaining_operation_count": 89,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 1
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 23,
+        "is_initial_scene": false,
+        "rescheduling_time": 460,
+        "previous_rescheduling_time": 440,
+        "actual_interval": 20,
+        "remaining_operation_count": 80,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -30
+          },
+          "due_date_change": {
+            "due_date_deltas": [
+              {
+                "sub_assembly_id": 2,
+                "delta": 92
+              },
+              {
+                "sub_assembly_id": 8,
+                "delta": 147
+              },
+              {
+                "sub_assembly_id": 24,
+                "delta": 699
+              },
+              {
+                "sub_assembly_id": 29,
+                "delta": -330
+              },
+              {
+                "sub_assembly_id": 48,
+                "delta": 223
+              }
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": 24,
+        "is_initial_scene": false,
+        "rescheduling_time": 480,
+        "previous_rescheduling_time": 460,
+        "actual_interval": 20,
+        "remaining_operation_count": 65,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "grinding workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 25,
+        "is_initial_scene": false,
+        "rescheduling_time": 500,
+        "previous_rescheduling_time": 480,
+        "actual_interval": 20,
+        "remaining_operation_count": 58,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -20
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 26,
+        "is_initial_scene": false,
+        "rescheduling_time": 520,
+        "previous_rescheduling_time": 500,
+        "actual_interval": 20,
+        "remaining_operation_count": 46,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 0,
+          "space_resource_utilization_ratio": 1,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": []
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": -18
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 27,
+        "is_initial_scene": false,
+        "rescheduling_time": 540,
+        "previous_rescheduling_time": 520,
+        "actual_interval": 20,
+        "remaining_operation_count": 43,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "assembly workers",
+                "delta": -2
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 28,
+        "is_initial_scene": false,
+        "rescheduling_time": 560,
+        "previous_rescheduling_time": 540,
+        "actual_interval": 20,
+        "remaining_operation_count": 33,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 29,
+        "is_initial_scene": false,
+        "rescheduling_time": 580,
+        "previous_rescheduling_time": 560,
+        "actual_interval": 20,
+        "remaining_operation_count": 23,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "assembly workers",
+                "delta": -3
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      },
+      {
+        "scene_id": 30,
+        "is_initial_scene": false,
+        "rescheduling_time": 600,
+        "previous_rescheduling_time": 580,
+        "actual_interval": 20,
+        "remaining_operation_count": 13,
+        "objective_flags": {
+          "mean_delay_time": 1,
+          "average_worker_resource_utilization_ratio": 1,
+          "space_resource_utilization_ratio": 0,
+          "mean_finish_time_variation": 0,
+          "makespan": 0
+        },
+        "problem_setting_changes": {
+          "operation_duration_extension": {
+            "triggered_rescheduling": false,
+            "actual_interval_delta_from_nominal_interval": 0
+          },
+          "worker_resource_availability": {
+            "worker_quantity_deltas": [
+              {
+                "worker_type": "welding workers",
+                "delta": -1
+              }
+            ]
+          },
+          "space_resource_occupation": {
+            "construction_site_available_area_delta": 0
+          },
+          "due_date_change": {
+            "due_date_deltas": []
+          }
+        }
+      }
+    ]
+  }
+}
