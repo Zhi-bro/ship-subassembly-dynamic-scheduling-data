@@ -62,7 +62,7 @@ This dataset is licensed under the Creative Commons Attribution 4.0 Internationa
 
 ## Data Availability Statement
 
-The data that support the findings of this study are openly available in GitHub at [URL].
+The data that support the findings of this study are openly available in GitHub at https://github.com/Zhi-bro/ship-subassembly-dynamic-scheduling-data.git.
 
 ## Ethics and Privacy
 
